@@ -1,3 +1,28 @@
 /* =============
     Footer
 ============= */
+
+footer{
+
+    .content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "logo copyright"
+        ". joe"
+        ;
+
+        .logo{
+            grid-area:logo;
+        }
+
+        .copyright{
+            grid-area:copyright;
+        }
+
+        .joe{
+            grid-area:joe;
+        }
+    }
+
+}

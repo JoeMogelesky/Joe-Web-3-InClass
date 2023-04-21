@@ -352,6 +352,20 @@ template {
 /* =============
     Base
 ============= */
+.large-images {
+  width: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". content .";
+}
+
+.content {
+  grid-area: content;
+}
+
 /* =============
     Typography
 ============= */
@@ -382,6 +396,29 @@ textarea {
 /* =============
     Header
 ============= */
+header .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 /* =============
     Footer
+============= */
+footer .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "logo copyright" ". joe";
+}
+footer .content .logo {
+  grid-area: logo;
+}
+footer .content .copyright {
+  grid-area: copyright;
+}
+footer .content .joe {
+  grid-area: joe;
+}
+
+/* =============
+    Hero
 ============= */
