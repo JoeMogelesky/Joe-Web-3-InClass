@@ -12,6 +12,13 @@ footer{
         ". joe"
         ;
 
+        @include md{
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 
+            "logo joe copyright"
+            ;
+        }
+
         .logo{
             grid-area:logo;
         }

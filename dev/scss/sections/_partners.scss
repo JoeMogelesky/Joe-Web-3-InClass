@@ -1,0 +1,49 @@
+/* =============
+    Partners
+============= */
+
+.partners{
+
+    ul{
+       
+        @include md{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @include xl{
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-areas: 
+            "p1 p1 p1 p2 p2 p3"
+            "p4 p5 p5 p5 p6 p6"
+            ;
+
+
+            .android{
+                grid-area: p1;
+            }
+
+            .apple{
+                grid-area:p2;
+            }
+
+            .reddit{
+                grid-area: p4;
+            }
+
+            .aws{
+                grid-area:p3;
+            }
+
+            .google{
+                grid-area:p5;
+            }
+
+            .ms{
+                grid-area:p6;
+            }
+        }
+
+
+    }
+}

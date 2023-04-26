@@ -12,8 +12,11 @@
     grid-template-areas:
      ". content ."
     ;
+
+    .content{
+        grid-area:content;
+    }
 }
 
-.content{
-    grid-area:content;
-} 
+
+ 
